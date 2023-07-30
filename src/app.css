@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+ 
+  --color-primary:rgb(14,165,233); 
+  --color-primary2:rgb(15, 119, 167); 
+  --color-light: rgb(148,163,184); 
+  --color-light2: rgb(226,232,240); 
+  --color-bg:rgb(15,23,42);
+  --color-bg1: hsl(252, 30%, 17%);
+  --color-bg2: hsl(252, 30%, 10%);;
+  --color-bg3:  #213547;
+  --color-bg4:  #011151;
+
+  /*GENERAL CONTAINER VARIBLES*/
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 100%;
+
+  /*GENERAL RADIUS VARIBLES*/
+  --border-radius-1: 1.2rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 0.5rem;
+
+  /*GENERAL CONTAINER VARIBLES*/
+  --transition: all 300ms ease;
+  --transition-long: all 500ms ease;
+}
+
+/*============THEME COLOURS=============*/
+[data-themeBg = 'bgDark'] {
+  --color-white:  hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, 10%);
+  --color-black: #fff;
+  --color-white-1: #fbf4f4;
+}
+
+[data-themeBg = 'bgBlack'] {
+  --color-white:  hsl(252, 30%, 10%);
+  --color-light: hsl(252, 30%, 0%);
+  --color-black: #fff;
+  --color-white-1: #fbf4f4;
+}
+
+[data-themePrimary = 'colorViolet'] {
+  --color-primary: rgb(122, 51, 155);
+}
+
+[data-themePrimary = 'colorGreen'] {
+  --color-primary: rgb(27, 201, 27);
+}
+
+[data-themePrimary = 'colorRed'] {
+  --color-primary: rgb(239, 61, 61);
+}
+
+[data-themePrimary = 'colorPink'] {
+  --color-primary: rgb(227, 63, 164);;
+}
+/*============THEME COLOURS=============*/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Raleway', sans-serif; 
+    line-height: 1.6;
+    font-size: 0.9rem;
+    background: var(--color-bg);
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin-inline:auto;
+  max-width: 1920px;
+}
+
+section {
+  padding: 5rem 0;
+  width: 100vw;
+}
+
+
+section > h2 {
+  text-align: center;
+}
+
+section > p {
+  text-align: center;
+  margin: 0.5rem auto 4rem auto;
+  width: 40%;
+}
+
+a {
+  color: var(--color-primary); 
+  transition: var(--transition);
+}
+
+p {
+  color: var(--color-light);
+}
+
+button {
+  transition: var(--transition);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+h1 {font-size: 3rem; color: var(--color-black);}
+h2 {font-size: 2rem; color: var(--color-primary);}
+h3 {font-size: 1.6rem; color: var(--color-black);}
+h4 {font-size: 1.1rem; color: var(--color-black);}
+h5 {font-size: 0.95rem; color: var(--color-black);}
+h6 {font-size: 0.8rem; color: var(--color-black);}
+small {color: var(--color-black);}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-light);
+  color: var(--color-black);
+  padding: 0.6rem 2rem;
+  border: 2px solid transparent;
+  font-weight: 600;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  padding: inherit;
+  border-radius: inherit;
+  transition: var(--transition-long);
+  transform: scaleX(1);
+  z-index: -1;
+  transform-origin: right;
+}
+
+.btn:hover::before {
+  transform: scaleX(0);
+}
+
+
+.btn:hover {
+  background: transparent;
+  border-color: var(--color-light);
+  color: var(--color-light);
+  transform: translateY(-0.3rem);
+}
+
+.btn.white {
+  background: var(--color-white);
+}
+
+.btn.white:hover {
+  background: transparent;
+  border-color: var(--color-white-1);
+}
+
+.btn.primary {
+  background: var(--color-primary);
+  color: var(--color-white-1);
+}
+
+.btn.primary:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn.sm {
+  padding: 0.5rem 1.2rem;
+}
+
+/*---------Fading intersection Oberver Effects------------*/
+.fade-in {
+  opacity: 0;
+  transition: 1.2s;
+  transform: translateY(3.5rem);
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transition: 1.2s;
+  transform: translateY(0);
+}
+
+
+.fader {
+  opacity: 0;
+  transform: scale(0.9) translateX(.5rem);
+  transition: 1.2s;
+}
+
+.fader.appear {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  transition: 3s;
+}
+
+.btnFader {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: 1s;
+}
+
+.btnFader.appear {
+  opacity: 1;
+  transform: scale(1);
+  transition: 2s;
+}
+
+.fadeUp {
+  opacity: 1;
+  transition: 1.2s;
+  transform: translateY(-4rem);
+}
+
+.fadeUp.appear {
+  opacity: 1;
+  transition: 1.2s;
+  transform: translateY(0);
+}
+
+.textleft {
+  opacity: 0;
+  transform: translateX(5rem);
+  transition: 1.2s;
+}
+
+.textleft.appear {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1.2s;
+}
+
+.textright {
+  opacity: 0;
+  transform: translateX(-5rem);
+  transition: 1.2s;
+}
+
+.textright.appear {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1.2s;
+}
+
+/*---------End of Fading intersection Oberver Effects------------*/
+
+/*=============TABLET MEDIA SCREENS===========*/
+@media screen and (max-width:1024px) {
+  body {
+    font-size: 0.9rem;
+  }
+  
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    padding: 5rem 0;
+  }
+
+  section > p {
+    width: 70%;
+    margin-bottom: 2.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+}
+
+
+/*=============MOBILE PHONES MEDIA SCREENS===========*/
+@media screen and (max-width:600px) {
+  section {padding: 6rem 0 3rem 0;}
+
+  h1 {font-size: 2.1rem;}
+
+  h2 {font-size: 1.4rem;}
+
+  h3 {font-size: 1.2rem;}
+
+  h4 {font-size: 1rem;}
+
+  .btn {padding: 0.5rem;}
+
+  .section > p {
+    width: var(--container-width-md);
+  }
+}
+
+
+
+

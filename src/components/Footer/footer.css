@@ -1,0 +1,17 @@
+footer span.btn {
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    
+}
+
+footer a {
+    color: var(--color-bg);
+}
+
+@media screen and (max-width: 600px) {
+    footer span.btn {
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+}

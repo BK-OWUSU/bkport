@@ -1,0 +1,25 @@
+form input,form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-light2);
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact_left article {
+    border: 1px solid transparent;
+    transition: var(--transition-long);
+}
+
+.contact_left article:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    transform: translateY(-0.3rem);
+}
+
+.contact_left article:hover span {
+    color: var(--color-primary);
+}

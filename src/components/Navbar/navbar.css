@@ -1,0 +1,31 @@
+.menu a {
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    background: var(--color-primary);
+    width: 0%;
+    height: 1.5px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: var(--transition);
+  }
+
+  .menu a:hover::after {
+    width: 100%;
+  }
+
+  nav {
+    background: transparent;
+    backdrop-filter: blur(5rem);
+    
+  }
+
+ /*  @media screen and (max-width:600px) {
+    nav {
+      background: var(--color-primary);
+      
+    }
+  } */
