@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="nav_container container flex justify-between items-center">
         <a href="index.html">
           <h2 className='flex flex-row justify-center items-center relative md:text-[var(--color-light2)]'>
-            <img src={BkIcon} alt="bk_Icon" />
+            <img className='w-[2.1rem] sm:w-[3rem]' src={BkIcon} alt="bk_Icon" />
           </h2>
         </a>
         <ul className="menu hidden md:flex gap-[3rem] text-[1.1rem]">
