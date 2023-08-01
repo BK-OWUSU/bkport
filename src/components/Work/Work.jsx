@@ -8,11 +8,11 @@ import IMG5 from '../../assets/project1.png'
 import IMG6 from '../../assets/project4.png'
 
 const workData = [
-  {id: 1, img: IMG1, title:'HTML, CSS,  JavaScript', linkDemo: 'https://www.bk-owusu.github.io/bk-socials',linkGit: 'https://www.github.com/BK-OWUSU/bk-socials', desc: 'A cool and highly responsive social media website created using HtML, JavaScipt and CSS'},
-  {id: 2, img: IMG2, title:'React', linkDemo: 'https://www.bk-owusu.github.io/oams',linkGit: 'https://www.github.com/BK-OWUSU/oams', desc: 'A single page school website project design in react with user-friendly and beautifull interface'},
-  {id: 3, img: IMG3, title:'React', linkDemo: 'https://www.bk-owusu.github.io/bmark',linkGit: 'https://www.github.com/BK-OWUSU/bmark', desc: 'A nice and cool user-friendly portfolio website with theme customization created using React'},
-  {id: 4, img: IMG4, title:'HTML, CSS,  JavaScript', linkDemo: 'https://www.bk-owusu.github.io/inter-obs',linkGit: 'https://www.github.com/BK-OWUSU/inter-obs', desc: 'A simple and highly responsive portfolio website created using HtML, JavaScipt and CSS'},
-  {id: 5, img: IMG5, title:'HTML, CSS,  JavaScript', linkDemo: 'https://www.bk-owusu.github.io/bk-owusu.github.io',linkGit: 'https://www.github.com/BK-OWUSU/BK-OWUSU.github.io', desc: 'A multipage and highly responsive educational website design using HtML, JavaScipt and CSS'},
+  {id: 1, img: IMG1, title:'HTML, CSS,  JavaScript', linkDemo: 'https://bk-owusu.github.io/bk-socials',linkGit: 'https://www.github.com/BK-OWUSU/bk-socials', desc: 'A cool and highly responsive social media website created using HtML, JavaScipt and CSS'},
+  {id: 2, img: IMG2, title:'React', linkDemo: 'https://bk-owusu.github.io/oams',linkGit: 'https://www.github.com/BK-OWUSU/oams', desc: 'A single page school website project design in react with user-friendly and beautifull interface'},
+  {id: 3, img: IMG3, title:'React', linkDemo: 'https://bk-owusu.github.io/bmark',linkGit: 'https://www.github.com/BK-OWUSU/bmark', desc: 'A nice and cool user-friendly portfolio website with theme customization created using React'},
+  {id: 4, img: IMG4, title:'HTML, CSS,  JavaScript', linkDemo: 'https://bk-owusu.github.io/inter-obs',linkGit: 'https://www.github.com/BK-OWUSU/inter-obs', desc: 'A simple and highly responsive portfolio website created using HtML, JavaScipt and CSS'},
+  {id: 5, img: IMG5, title:'HTML, CSS,  JavaScript', linkDemo: 'https://bk-owusu.github.io/bk-owusu.github.io',linkGit: 'https://www.github.com/BK-OWUSU/BK-OWUSU.github.io', desc: 'A multipage and highly responsive educational website design using HtML, JavaScipt and CSS'},
   {id: 6, img: IMG6, title:'HTML, CSS,  JavaScript', linkDemo: 'https://www.bk-owusu.github.io',linkGit: 'https://www.bk-owusu.github.io', desc: 'This project is currently under development. You can visit my github repository for more updates'},
 ]
 

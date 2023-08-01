@@ -35,7 +35,7 @@ const Header = () => {
         <p className='fade-in text-[0.9rem] sm:text-lg py-4 sm:w-[80%]'>You are a click away from building your own amazing website. Just send me the details of your project for a quick morden and highly responsive web Apps today!</p>
         <div className="header_cta flex gap-[2rem] mt-1 justify-center sm:justify-normal">
             <a href="#contact" className='btn primary'>Let's Talk</a>
-            <a href="#portfolio" className='btn group'>My Work <HiArrowNarrowRight className='text-lg group-hover:rotate-90'/></a>
+            <a href="#work" className='btn group'>My Work <HiArrowNarrowRight className='text-lg group-hover:rotate-90'/></a>
           </div>
       </div>
       <div className="header_socials fixed z-20 top-[40%] xl:bottom-[30vh] md:bottom-[40vh] hidden md:block">
