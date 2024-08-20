@@ -7,7 +7,7 @@ import {BsWhatsapp} from 'react-icons/bs'
 const contactData = [
   {id: 1, pic:<MdOutlineEmail/>, title: 'Email', account: 'owusubk416@gmail.com' ,link: 'mailto:owusubk416@gmail.com' },
   {id: 2, pic:<PiMessengerLogoBold/>, title: 'Messenger', account: 'Bismark_Okyere' ,link: 'https://m.me/bismark.okyere.505' },
-  {id: 3, pic:<BsWhatsapp/>, title: 'WhatsApp', account: "Let's Chat" ,link: 'https://api.whatsapp.com/send?phone=+233547270155' },
+  {id: 3, pic:<BsWhatsapp/>, title: 'WhatsApp', account: "Let's Chat" ,link: 'https://wa.me/0547270155' },
 ]
 
 const Contact = () => {
